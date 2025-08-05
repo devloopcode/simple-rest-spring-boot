@@ -1,9 +1,16 @@
 package com.learn.rest;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class OrderDTO {
 
+    @JsonProperty("c-name")
     private String customerName;
+
+    @JsonProperty("p-name")
     private String productName;
+
+    @JsonProperty("quantity ")
     private int quantity;
 
     public void setCustomerName(String customerName) {
